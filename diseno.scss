@@ -1,0 +1,295 @@
+// <!-- Lopez Parra Agustin -->
+// <!-- Para: -->
+// <!-- UTNG Incorporation -->
+
+
+// definición de colores
+$primary: #1A2537;
+$danger: #FFFF;
+
+$theme-colors: (
+  "primary": $primary,
+  "danger": $danger
+);
+
+// estilos para el body
+body {
+  background-image: url("./fondo-politica-ambiental_Mesa de trabajo 1.png");
+  background-size: cover;
+  background-position: center;
+}
+
+// estilos para el contenedor principal
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+// estilos para los formularios
+#loginForm,
+#registrationForm,
+#cargaArtForm {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+// estilos para el título
+.titulo {
+  text-align: center;
+  font-weight: bold;
+  color: $primary;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+}
+
+// stilos para los textos de términos, enlaces de inicio de sesión y enlaces de registro
+#TerminosyCondiciones,
+#linkIniciarSesion,
+#linkRegistrarse {
+  margin-bottom: 20px;
+  text-align: center;
+  color: $primary;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+// estilos para los enlaces
+a {
+  color: blue;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: darkblue;
+}
+
+// estilos para los botones
+.btn-cargarArchivo,
+.btn-registrate,
+.btn-login {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: $primary;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+  }
+}
+
+// estilos para los elementos de carga de archivos personalizados
+.custom-file-label {
+  background-color: $primary;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+  transition: background-color 0.3s;
+
+  &:hover {
+    background-color: darken($primary, 10%);
+    cursor: pointer;
+  }
+}
+
+// estilos para la entrada de archivo personalizada cuando está enfocada
+.custom-file-input:focus + .custom-file-label {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.407);
+    // agrega una sombra alrededor de la entrada de archivo cuando está enfocada
+    // la sombra se crea utilizando una longitud y un color de sombra específicos
+  }
+  
+  // estilos para la entrada de archivo personalizada cuando está deshabilitada
+  .custom-file-input:disabled + .custom-file-label {
+    background-color: $primary;
+    cursor: not-allowed;
+    // acá cambia el color de fondo y el cursor de la entrada de archivo cuando está deshabilitada
+    // luego se establece el color de fondo utilizando la variable $primary,
+    // el cursor a "not-allowed" es para indicar que no se puede interactuar con la entrada de archivo
+  }
+  
+  textarea.form-control {
+    border: none;
+    box-shadow: none;
+  }
+
+
+   @import "./node_modules/bootstrap/scss/bootstrap.scss";
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// $primary: #1A2537;
+// $danger: #FFFF;
+
+// $theme-colors: (
+//   "primary": $primary,
+//   "danger": $danger
+// );
+
+// body {
+//   background-image: url("./fondob.png");
+//   background-size: cover;
+//   background-position: center;
+// }
+
+
+
+// .container {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   min-height: 100vh;
+// }
+
+
+// #loginForm,
+// #registrationForm,
+// #cargaArtForm 
+//     {
+//     max-width: 400px;
+//     width: 100%;
+//     margin: 0 auto;
+//     background-color: white;
+//     padding: 20px;
+//     border-radius: 5px;
+// }
+  
+
+// .titulo {
+//   text-align: center;
+//   font-weight: bold;
+//   color: $primary;
+//   margin-bottom: 20px;
+//   font-family: Arial, sans-serif;
+//   font-size: 24px;
+// }
+
+// #TerminosyCondiciones,
+// #linkIniciarSesion,
+// #linkRegistrarse {
+//   margin-bottom: 20px;
+//   text-align: center;
+//   color: $primary;
+//   font-family: Arial, sans-serif;
+//   font-size: 14px;
+// }
+
+// a {
+//   color: blue;
+//   text-decoration: underline;
+// }
+
+// a:hover {
+//   color: darkblue;
+// }
+
+// .btn-cargarArchivo,
+// .btn-registrate, 
+// .btn-login {
+//   display: block;
+//   width: 100%;
+//   padding: 10px;
+//   background-color: $primary;
+//   color: white;
+//   border: none;
+//   border-radius: 5px;
+//   font-size: 16px;
+//   text-align: center;
+//   cursor: pointer;
+//   transition: background-color 0.3s;
+// }
+
+// .btn-registrate:hover {
+//   background-color: darken($primary, 10%);
+// }
+
+// .btn-login:hover {
+//     background-color: #153a59;
+//   }
+
+//   .custom-file-label {
+//     background-color: $primary;
+//     color: white;
+//     border: none;
+//     border-radius: 5px;
+//     padding: 8px 12px;
+//     transition: background-color 0.3s;
+//   }
+  
+//   .custom-file-label:hover {
+//     background-color: darken($primary, 10%);
+//     cursor: pointer;
+//   }
+  
+//   .custom-file-input:focus + .custom-file-label {
+//     box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.407);
+//   }
+  
+//   .custom-file-input:disabled + .custom-file-label {
+//     background-color: $primary;
+//     cursor: not-allowed;
+//   }
+
+//   textarea.form-control {
+//     border: none;
+//     box-shadow: none;
+//   }
+  
+  
+// @import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

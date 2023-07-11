@@ -1,0 +1,78 @@
+<!-- Lopez Parra Agustin -->
+<!-- Para: -->
+<!-- UTNG Incorporation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate</title>
+    <link rel="stylesheet" href="diseno.css">
+</head>
+
+<body>
+    <!-- contenedor principal -->
+    <div class="container">
+        <!-- formulario de registro -->
+        <form class="row" id="registrationForm">
+            <fieldset>
+                <!-- título del formulario -->
+                <legend class="titulo">Registrate</legend>
+                
+                <!-- muestra Nombre Completo -->
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Nombre Completo">
+                </div>
+                
+                <!-- muestra Email -->
+                <label for="emailInput" class="form-label">Email</label>
+                <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Usuario" id="emailInput"
+                        aria-describedby="emailHelp">
+                    <span class="input-group-text" id="basic-addon2">@gmail.com</span>
+                </div>
+                
+                <!-- muestra Teléfono -->
+                <div class="mb-3">
+                    <label for="telInput" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="telInput" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        aria-describedby="telInputDesc" placeholder="Numero de telefono">
+                    <div id="telInputDesc" class="form-text">Ingresa en el formato: 123-456-7890.</div>
+                </div>
+                
+                <!-- muestra Contraseña -->
+                <div class="mb-3">
+                    <label for="inputPass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPass" placeholder="Ingrese Contraseña">
+                </div>
+                
+                <!-- Muestra Repetir Contraseña -->
+                <div class="mb-3">
+                    <label for="inputPassw" class="form-label">Repetir Contraseña</label>
+                    <input type="password" class="form-control" id="inputPassw" placeholder="Repita Contraseña">
+                </div>
+                
+                <!-- totón de Registro -->
+                <button type="button" class="btn-registrate"
+                    onclick="window.location.href='./cargarArt.html'">Registrate</button>
+                
+                <!-- texto de Términos y Condiciones -->
+                <div class="form-text" id="TerminosyCondiciones">Al registrar, aceptas nuestras Condiciones de uso y
+                    Politica de privacidad</div>
+                
+                <!-- texto de Enlace a Iniciar Sesión -->
+                <div class="form-text" id="linkIniciarSesion">¿Ya tienes una cuenta? <a
+                        href=".\iniciosesion.html">Iniciar Sesión</a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>
+

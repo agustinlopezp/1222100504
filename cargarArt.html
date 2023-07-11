@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cargar Articulo</title>
+    <link rel="stylesheet" href="diseno.css">
+
+</head>
+
+<body>
+    <div class="container">
+        
+        <form class="row" id="cargaArtForm">
+            <fieldset>
+                <legend class="titulo">Cargar artículo</legend>
+
+                <!-- Muestra menu desplegable de Tipo Subsistema -->
+                <div class="mb-3">
+                <label for="nameInput" class="form-label">Subsistema</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Tipo Subsistema</option>
+                    <option value="1">Universidad Tecnológica</option>
+                    <option value="2">Universidad Politécnica</option>
+                    <option value="3">Instituto Tecnológico</option>
+                  </select>
+                </div>
+
+                <!-- Muestra el Tipo de Articulo -->
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Artículo</label>
+                    <input type="text" class="form-control" id="artInput" placeholder="Tipo de Artículo">
+                </div>
+                
+                <!-- Muestra el Nombre del Autor -->
+                <div class="mb-3">
+                    <label for="nameInput" class="form-label">Nombre Autor</label>
+                    <input type="text" class="form-control" id="nameInput" placeholder="Nombre Autor">
+                </div>
+                
+                <!-- Muestra Breve resumen del articulo  -->
+
+                 <div class="mb-3">
+                    <label for="nameInput" class="form-label">Resumen</label>
+                        <div class="form-floating">
+                            <textarea class="form-control" placeholder="Breve resumen del artículo" id="floatingTextarea2" >El libro habla de...</textarea> 
+                            <!-- style="height: 100px" -->
+                            <label for="floatingTextarea2">Resumen del artículo</label>
+                        </div>
+                </div>
+
+                <!-- Muestra la eleccion de un archivo -->
+
+                <div class="mb-3 custom-file">
+                    <label for="formFileMultiple" class="form-label">Subir Archivo</label>
+                    <input class="form-control custom-file-input" type="file" id="formFileMultiple" multiple>
+                  </div>
+                             
+
+                <!-- Boton para Cargar Archivo -->
+                <button type="button" class="btn-cargarArchivo" > Cargar archivo </button>
+                <div class="form-text" id="linkIniciarSesion"> UTNG INCORPORATION</div>
+                <div class="form-text" id="linkIniciarSesion">Pagina de <a href=".\iniciosesion.html"> Inicio de Sesión</a></div>
+                
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+<!-- Todo el Scrip del JavaScript de Bootstrap -->
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html> 

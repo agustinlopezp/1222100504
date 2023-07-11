@@ -1,0 +1,52 @@
+
+
+
+
+
+
+
+<!-- Lopez Parra Agustin -->
+<!-- Para: -->
+<!-- UTNG Incorporation -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="diseno.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <form class="row" id="loginForm">
+            <fieldset>
+                <legend class="titulo">Iniciar Sesión</legend>
+                <div class="mb-3">
+                    <label for="emailInput" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="emailInput" placeholder="Correo Electronico">
+                </div>
+
+                <div class="mb-3">
+                    <label for="inputPass" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="inputPass" placeholder="Ingrese Contraseña">
+                </div>
+
+                <button type="button" class="btn-login" onclick="window.location.href='./cargarArt.html'">Login</button>
+
+                <div class="form-text" id="TerminosyCondiciones">Al iniciar sesión, aceptas nuestras Condiciones de uso y Política de privacidad</div>
+                <div class="form-text" id="linkRegistrarse">¿No tienes una cuenta? <a href="./registro.html">Regístrate</a>
+                    <div class="form-text" id="linkIniciarSesion"> UTNG INCORPORATION</div>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+
+<script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</html>
